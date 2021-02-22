@@ -1,3 +1,9 @@
+import sys
+
+file = open(sys.argv[1],"r")
+file = file.readlines()
+n = file[0].split()[0]
+k = file[0].split()[1]
 rab_array=[1,1]
 
 def rab(k):
@@ -5,7 +11,6 @@ def rab(k):
     new=(rab_array[-2])*k+rab_array[-1]
     rab_array.append(new)
 
-n=28
 for i in range(n-2):
-    rab(4)
+    rab(k)
 print(rab_array[-1])

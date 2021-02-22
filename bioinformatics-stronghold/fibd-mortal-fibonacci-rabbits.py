@@ -1,3 +1,10 @@
+import sys
+
+file = open(sys.argv[1],"r")
+file = file.readlines()
+n = file.split()[0]
+m = file.split()[1]
+
 n=98
 m=18
 

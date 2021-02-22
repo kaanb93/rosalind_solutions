@@ -1,8 +1,9 @@
 import fastaparser
+import sys
 
 seq_dict={}
 
-with open("rosalind_grph.txt") as fasta_file:
+with open(sys.argv[1]) as fasta_file:
     parser=fastaparser.Reader(fasta_file)
     for seq in parser:
         seq_dict[seq.id]=seq.sequence_as_string()

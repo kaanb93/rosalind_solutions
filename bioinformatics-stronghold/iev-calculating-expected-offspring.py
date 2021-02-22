@@ -1,9 +1,14 @@
-AA_AA=18792
-AA_Aa=18034
-AA_aa=16307
-Aa_Aa=18214
-Aa_aa=18511
-aa_aa=19199
+import sys
+
+file = open(sys.argv[1],"r")
+file = file.readlines()
+sp = file[0].split()
+AA_AA=sp[0]
+AA_Aa=sp[1]
+AA_aa=sp[2]
+Aa_Aa=sp[3]
+Aa_aa=sp[4]
+aa_aa=sp[5]
 
 pair_list=[AA_AA,AA_Aa,AA_aa,Aa_Aa,Aa_aa,aa_aa]
 perc_list=[1,1,1,0.75,0.5,0]

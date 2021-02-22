@@ -1,5 +1,6 @@
 import fastaparser
 from difflib import SequenceMatcher
+import sys
 
 def longestSubstring(str1,str2):
      seqMatch = SequenceMatcher(None,str1,str2)
@@ -8,7 +9,7 @@ def longestSubstring(str1,str2):
 
 
 seq_dict={}
-with open("rosalind_lcsm.txt") as fasta_file:
+with open(sys.argv[1]) as fasta_file:
     parser=fastaparser.Reader(fasta_file)
     for seq in parser:
         seq_dict[seq.id]=seq.sequence_as_string()

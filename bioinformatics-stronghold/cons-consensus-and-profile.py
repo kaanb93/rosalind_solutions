@@ -1,12 +1,13 @@
 import collections
 import fastaparser
+import sys
 
 listA=[]
 listC=[]
 listG=[]
 listT=[]
 
-with open("rosalind_cons.txt") as fasta_file:
+with open(sys.argv[1]) as fasta_file:
     parser=fastaparser.Reader(fasta_file)
     for seq in parser:
         if len(listA)==0:
@@ -24,7 +25,7 @@ with open("rosalind_cons.txt") as fasta_file:
             elif s=="T":
                 listT[i]+=1
             else:
-                raise KeyError("WTF!?")
+                raise KeyError("String contains undefined letter: "+s)
 
 consensus=[]
 for i in range(len(listA)):
@@ -55,6 +56,4 @@ G="G: "+G
 T=" ".join(listT)
 T="T: "+T
 
-output=open("cons_out.txt","w+")
-output.write(consensus+"\n"+A+"\n"+C+"\n"+G+"\n"+T)
-output.close()
+print(consensus+"\n"+A+"\n"+C+"\n"+G+"\n"+T)

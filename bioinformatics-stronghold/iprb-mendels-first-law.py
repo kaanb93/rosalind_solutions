@@ -1,6 +1,11 @@
-k=30
-m=27
-n=29
+import sys
+
+file = open(sys.argv[1],"r")
+file = file.readlines()
+sp = file[0].split()
+k=sp[0]
+m=sp[1]
+n=sp[2]
 
 pop=k+m+n
 
