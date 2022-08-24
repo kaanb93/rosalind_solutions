@@ -1,5 +1,5 @@
 # open downloaded dataset
-file = open("rosalind_ini5.txt", "r")
+file = open('rosalind_ini5.txt', 'r')
 
 # read each line to make it into a list
 lines = file.readlines()
