@@ -15,4 +15,6 @@ d = int(input("Variable d: "))
 
 # operation
 result = s[a:b+1]+" "+s[c:d+1]
+
+# print result
 print(result)
