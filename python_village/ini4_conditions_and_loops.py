@@ -1,8 +1,10 @@
-# var_a
-a = int(input('Variable a: '))
+# open downloaded dataset
+file = open('rosalind_ini4.txt', 'r').read()
 
-# var_b
-b = int(input('Variable b: '))
+# define variables
+var_list = file.split(' ')
+a = int(var_list[0])
+b = int(var_list[0])
 
 # operation
 sum = 0

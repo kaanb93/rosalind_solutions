@@ -9,4 +9,4 @@ for i,line in enumerate(lines):
     if i % 2 == 0:
         continue
     else:
-        print(line)
+        print(line.strip())
