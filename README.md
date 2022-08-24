@@ -1,4 +1,4 @@
-# rosalind-solutions
+# rosalind_solutions
 
 My solutions to rosalind problems. 
 
