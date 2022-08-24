@@ -1,7 +1,7 @@
 from collections import Counter
 
 # open downloaded dataset
-file = open("rosalind_dna.txt", "r")
+file = open("rosalind_dna.txt", "r").read()
 
 # save nucleotide counts to a dictionary
 nuc_dict = dict(Counter(file))
