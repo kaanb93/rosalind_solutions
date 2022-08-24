@@ -1,8 +1,8 @@
 # var1
-a = 828
+a = int(input("First Variable: "))
 
 # var2
-b = 878
+b = int(input("Second Variable: "))
 
 # operation
 result = a**2 + b**2
