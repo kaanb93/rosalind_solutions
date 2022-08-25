@@ -7,8 +7,8 @@ n = int(var_list[0])
 k = int(var_list[1])
 
 # define a sequence, calculate new item, append the sequence
-rabbit_array = [1, 1]
-for i in range(n - 2):
+rabbit_array = [0, 1]
+for i in range(n - 1):
     new_item = rabbit_array[-1] + rabbit_array[-2] * k
     rabbit_array.append(new_item)
 
