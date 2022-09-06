@@ -13,4 +13,4 @@ for i in range(len(s) - len(t)):
         positions.append(str(i + 1))
 
 # print results
-print(" ".join(positions))
+print(' '.join(positions))
